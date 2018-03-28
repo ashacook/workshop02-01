@@ -1,0 +1,148 @@
+#tile-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.col-25 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col {
+  height: 100%;
+  float: left;
+}
+
+#col-1 {
+  background: #00d282;
+}
+
+#col-1 .stripe {
+  height: 2%;
+  width: 100%;
+  background: white;
+  float: left;
+}
+
+#col-1 .stripe:nth-child(2n+0) {
+  background: pink;
+}
+
+#col-2 {
+  background: #00c7ef;
+}
+
+
+#col-3 {
+  background: yellow;
+}
+
+#col-3 .stripe {
+  height: 100%;
+  width: 10%;
+  background:white;
+  float: left;
+}
+
+#col-3 .stripe:nth-child(2n+0) {
+  background: yellow;
+}
+
+
+/* CCS @MEDIA SCREEN 4 LATER */
+@media screen and (max-width: 400px) and (min-width: 0px) {
+
+#col-1 .stripe:nth-child(2n+0) {
+background: black;
+}
+
+#col-2 {
+  background: white;
+}
+
+#col-3 .stripe:nth-child(2n+0){
+ background: black;
+}
+
+}
+
+/* DON'T DELETE THIS */
+#flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+
+
+/* DON'T DELETE THIS */
+
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
